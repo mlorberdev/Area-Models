@@ -11,14 +11,33 @@
     // WRITE TO DOM
     mm.innerHTML = m;
     nn.innerHTML = n;
-    // BEGIN DECOMPOSITION
+    // DECOMPOSITION
     let rr = m.toString().split("");
     let cc = n.toString().split("");
-    // SETUP ANIMATION
     rr = [rr[0] * 100, rr[1] * 10, rr[2] * 1];
     cc = [cc[0] * 10, cc[1] * 10];
-    // FILL ARRAY
-    
+    // CREATE & FILL ARRAY
+    let frag = new DocumentFragment();
+    for (let i = 0; i < rr.length; i++) {
+      let R = document.createElement("div");
+      R.classList.add("flex","row","center");
+      for (let j = 0; j < cc.length; j++) {
+        let C = document.createElement("div");
+        C.classList.add("flex","center","arr");
+        let I = document.createElement("input");
+        I.type = "tel";
+        I.maxLength = 5;
+        I.size = 5;
+        I.addEventListener("keydown", kick);
+        C.appendChild(I);
+        R.appendChild(C);
+      }
+      frag.appendChild(R);
+    }
+    array.appendChild(frag);
   }
   init();
+  function kick(e) {
+    if (!e.key.match(/[0-9]/) && e.which !== 8 && e.which !== 9) e.preventDefault();
+  }
 })();

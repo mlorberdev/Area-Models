@@ -54,10 +54,17 @@ main {
 }
 
 .arr {
-  --d: calc(min(25vw,25vh));
-  width:var(--d);
+  --d: calc(min(20vw,20vh));
+  width:fit-content;
   height:var(--d);
   border: 1px solid chartreuse;
+}
+.arr > input {
+  text-align: center;
+  font-size: 2rem;
+  background:none;
+  border:none;
+  color:chartreuse;
 }
 
 footer {
