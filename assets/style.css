@@ -1,0 +1,69 @@
+@font-face {
+  font-family: poppins;
+  src: url(./Poppins-Medium.ttf);
+}
+* {
+  margin:0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+body,
+main {
+  position:fixed;
+  top:0;
+  left:0;
+  overflow: hidden;
+  color:#eee;
+}
+
+main {
+  width:100vw;
+  height:100vh;
+  background-color: #111;
+}
+
+.flex {
+  display:flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+#numbers {
+  position:absolute;
+  top:0;
+  width:100%;
+  font-size:2rem;
+  padding:1rem 0;
+}
+
+.num {
+  min-width:30vw;
+  border-bottom: 1px solid chartreuse;
+}
+
+.arr {
+  --d: calc(min(25vw,25vh));
+  width:var(--d);
+  height:var(--d);
+  border: 1px solid chartreuse;
+}
+
+footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:4rem;
+  font-size:2rem;
+}
