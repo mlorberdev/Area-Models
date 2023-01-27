@@ -10,15 +10,39 @@
 </head>
 <body>
   <main class="flex center col">
-    <section id="numbers" class="flex center row">
+    <div class="btn" id="solve">SOLVE</div>
+    <div class="btn" id="new">NEW</div>
+    <article id="numbers" class="flex center row">
       <div id="n1" class="num flex center"></div>
       <div>×</div>
       <div id="n2" class="num flex center"></div>
-    </section>
-    <section id="array">
-      <div class="flex row center"></div>
-    </section>
-    <footer class="flex center">text</footer>
+      <div>=</div>
+      <div id="n3" class="num flex center"></div>
+    </article>
+    <article id="array">
+      <table>
+        <tr>
+          <td class="hide"></td>
+          <td id="c0" class="noBorder cH"></td>
+          <td id="c1" class="noBorder cH"></td>
+        </tr>
+        <tr>
+          <td id="r0" class="noBorder rH"></td>
+          <td><input type="tel" maxlength="4" size="4"/></td>
+          <td><input type="tel" maxlength="4" size="4"/></td>
+        </tr>
+        <tr>
+          <td id="r1" class="noBorder rH"></td>
+          <td><input type="tel" maxlength="4" size="4"/></td>
+          <td><input type="tel" maxlength="4" size="4"/></td>
+        </tr>
+        <tr>
+          <td id="r2" class="noBorder rH"></td>
+          <td><input type="tel" maxlength="4" size="4"/></td>
+          <td><input type="tel" maxlength="4" size="4"/></td>
+        </tr>
+      </table>
+    </article>
   </main>
 </body>
 <script src="./assets/script.js"></script>

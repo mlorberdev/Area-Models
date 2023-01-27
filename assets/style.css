@@ -14,7 +14,7 @@ main {
   top:0;
   left:0;
   overflow: hidden;
-  color:#eee;
+  color:#e6a20f;
 }
 
 main {
@@ -43,28 +43,72 @@ main {
 #numbers {
   position:absolute;
   top:0;
-  width:100%;
-  font-size:2rem;
-  padding:1rem 0;
-}
-
-.num {
-  min-width:30vw;
-  border-bottom: 1px solid chartreuse;
-}
-
-.arr {
-  --d: calc(min(20vw,20vh));
   width:fit-content;
-  height:var(--d);
-  border: 1px solid chartreuse;
-}
-.arr > input {
-  text-align: center;
+  padding:1rem 0;
   font-size: 2rem;
+}
+
+.btn {
+  color: #e6a20f;
+  font-size:1rem;
+  border:1px solid #9e700e;
+  padding:.5rem 2rem;
+  border-radius:4rem;
+  cursor: pointer;
+}
+.btn:hover {
+  color:#111;
+  background-color: #9e700e;
+  font-weight: bold;
+}
+
+#solve {
+  position:fixed;
+  top:1rem;
+  left:1rem;
+}
+#new {
+  position:fixed;
+  top:1rem;
+  right:1rem;
+}
+.num {
+  padding:0 1rem;
+}
+
+td {
+  border:1px solid #9e700e;
+  font-size:2rem;
+  width:fit-content;
+  height:fit-content;
+}
+
+input {
+  text-align: right;
+  padding-right:12px;
+  font-size:2rem;
+  color: #65e60f;
   background:none;
   border:none;
-  color:chartreuse;
+}
+table {
+  border-spacing: 0;
+}
+.hide {
+  visibility: hidden;
+}
+
+.noBorder {
+  border:none;
+}
+
+.rH {
+  text-align: right;
+  padding-right: 12px;
+}
+
+.cH {
+  text-align: center;
 }
 
 footer {
